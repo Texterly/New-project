@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Cart from './Cart';
+import Cart from './Cart/Cart';
 
 function Button() {
   return (
@@ -15,7 +15,15 @@ function Button() {
       </ContainerSearch>
       <ContainerCart>
         <Cart />
+        <Done>
+          <div>done</div>
+        </Done>
       </ContainerCart>
+      <ContainerBN>
+        <Back>back</Back>
+        <Next>next</Next>
+      </ContainerBN>
+      <Search>make order</Search>
     </Container>
   );
 }
@@ -28,8 +36,6 @@ const Container = styled.div`
 
 const SignInContainer = styled.div`
   display: flex;
-  /* justify-content: center; */
-  /* align-items:center; */
   flex-direction: column;
 `;
 
@@ -79,7 +85,7 @@ const ContainerSearch = styled.div`
 const SearchDis = styled.button`
   border: none;
   border-radius: 4px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
@@ -97,7 +103,7 @@ const SearchDis = styled.button`
 const Search = styled.button`
   border: none;
   border-radius: 4px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
@@ -116,5 +122,66 @@ const Search = styled.button`
 `;
 
 const ContainerCart = styled.div`
+  display: flex;
+  margin-top: 10px;
+`;
 
+const Done = styled.button`
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 60px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #A0627B;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
+  :active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+`;
+
+const ContainerBN = styled.div`
+  margin-top: 10px;
+  width: 350px;
+`;
+
+const Back = styled.button`
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #2E3040;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
+  margin-right: 30px;  
+  :active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+`;
+
+const Next = styled.button`
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #A0627B;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
+  :active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 `;

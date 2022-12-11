@@ -90,6 +90,6 @@ const AppartmentInput = styled.input`
   color: #B79BA6;
   width: 160px;
   :first-child{
-  margin-right: 50px;
+    margin-right: 50px;
   }
 `;

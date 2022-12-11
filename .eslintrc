@@ -2,6 +2,7 @@
     "extends": ["airbnb", "airbnb/hooks"],
     "rules": {
         "react/button-has-type": "off",
-        "no-shadow": "off"
+        "no-shadow": "off",
+        "jsx-a11y/label-has-associated-control": "off"
     }
 }

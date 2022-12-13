@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import LeftButtons from './LeftButtons';
-import RightButtons from './RightButtons';
+import LeftButtons from './Left Button/LeftButtons';
+import RightButtons from './Right Button/RightButtons';
 
 function Button() {
   return (
